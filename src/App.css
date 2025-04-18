@@ -14,14 +14,18 @@
 
 
   /* font-sizes */
-  --fs-900: clamp(5rem, 8vw + 1rem, 9rem);
-  --fs-800: 3.5rem;
-  --fs-700: 1.5rem;
-  --fs-600: 1rem;
-  --fs-500: 1rem;
-  --fs-400: 0.9375rem;
-  --fs-300: 1rem;
-  --fs-200: 0.875rem;
+  --fs-1000: 6.975625rem;
+  --fs-900: 6rem;
+  --fs-800: 3.4375rem;
+  --fs-700: 3rem;
+  --fs-600: 2.5rem;
+  --fs-500: 2.25rem;
+  --fs-400: 2rem;
+  --fs-300: 1.74375rem;
+  --fs-200: 1.5rem;
+  --fs-100: 1rem;
+
+
 
   /* font-families */
   --ff-poppins-black: "Poppins", sans-serif;
@@ -36,11 +40,80 @@
 
 }
 
-h1 {
-  font-family: var(--ff-poppins-black);
-  font-size: var(--fs-800);
-  font-weight: var(--fw-style-black);
-  color: var(--clr-accent);
-  text-align: center;
-  text-transform: uppercase;
+/* ------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+}
+
+/* ------------------- */
+/* Global styles */
+/* ------------------- */
+
+/* Reset Margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+picture,
+figure {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-weight: var(--fw-style-regular);
+}
+
+body {
+  font-family: var(--ff-poppins-regular);
+  font-size: var(--fs-400);
+  background-color: hsl(var(--clr-dark));
+  color: hsl(var(--clr-white));
+  line-height: 1.5;
+  min-height: 100vh;
+  font-weight: 400;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  overflow-x: hidden;
+
+
+}
+
+/* Make images Easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove animations for people who don't want it by using media query */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
