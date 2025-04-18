@@ -4,9 +4,14 @@
 
 :root {
   /* colors */
-  --clr-dark: 230 35% 7%;
-  --clr-light: 231 77% 90%;
-  --clr-white: 0 0% 100%;
+  --clr-dark: #000000;
+  --clr-light: #ffffff;
+  --clr-accent: #E6C744;
+  --clr-accent-2: #c2c8DA;
+  --clr-accent-light: #D0D6F9;
+  --clr-accent-dark: #383B4B;
+  --clr-accent-dark-2: #151515;
+
 
   /* font-sizes */
   --fs-900: clamp(5rem, 8vw + 1rem, 9rem);
@@ -19,9 +24,23 @@
   --fs-200: 0.875rem;
 
   /* font-families */
-  --ff-serif: "Bellefair", serif;
-  --ff-sans-cond: "Barlow Condensed", sans-serif;
-  --ff-sans-normal: "Barlow", sans-serif;
+  --ff-poppins-black: "Poppins", sans-serif;
+  --ff-poppins-medium: "Poppins",
+    sans-serif;
+  --ff-poppins-regular: "Poppins",
+    sans-serif;
+  --fw-style-black: 900;
+  --fw-style-medium: 500;
+  --fw-style-regular: 400;
 
 
+}
+
+h1 {
+  font-family: var(--ff-poppins-black);
+  font-size: var(--fs-800);
+  font-weight: var(--fw-style-black);
+  color: var(--clr-accent);
+  text-align: center;
+  text-transform: uppercase;
 }
