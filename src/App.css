@@ -190,7 +190,7 @@ img.fashion-logo-img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-self: center;
-
+  margin-bottom: 2.5vh;
 }
 
 .call-to-action {
@@ -205,7 +205,7 @@ img.fashion-logo-img {
   color: var(--clr-dark);
   line-height: 7.5rem;
   width: max(60%);
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   margin-top: 3rem;
 
 }
@@ -220,11 +220,33 @@ img.fashion-logo-img {
 
 }
 
-.shape {}
+.shape {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
 
-.white {}
+}
 
-.yellow {}
+.shape::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130%;
+  height: 90%;
+  z-index: -1;
+  transform: rotate(-2deg);
+
+
+}
+
+.shape.white::before {
+  background-color: #FFFFFF;
+}
+
+.shape.yellow::before {
+  background-color: var(--clr-accent);
+}
 
 .call-to-action button {
   border-radius: 0.5rem;
@@ -238,6 +260,12 @@ img.fashion-logo-img {
   cursor: pointer;
   margin-left: 0.1rem;
   margin-top: 0.5rem;
+}
+
+.call-to-action button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+  box-shadow: #151515 -0.5rem 0.5rem 1rem;
 }
 
 .hero .hero-image {

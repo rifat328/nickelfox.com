@@ -5,7 +5,7 @@ const Hero = () => {
     <section className="hero">
       <div class="call-to-action">
         <h1>
-          <span className="shape white">LET’S</span> EXPLORE{" "}
+          <span className="shape white">LET’S</span> EXPLORE
           <span className="shape yellow">UNIQUE</span> CLOTHES.
         </h1>
         <p>Live for Influential and Innovative fashion!</p>
