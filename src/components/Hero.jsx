@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <section className="hero">
-      <div class="call-to-action">
+      <div className="call-to-action">
         <h1>
           <span className="shape white">LET’S</span> EXPLORE
           <span className="shape yellow">UNIQUE</span> CLOTHES.

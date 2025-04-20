@@ -178,6 +178,13 @@ img.fashion-logo-img {
   cursor: pointer;
 }
 
+.nav-bar .sign-up:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+  box-shadow: #151515 -0.2rem 0.5rem 1rem;
+  z-index: 10;
+}
+
 /* -------------------------------
 --------Hero styles----------
 ------------------------------- */
@@ -275,6 +282,7 @@ img.fashion-logo-img {
   display: grid;
   justify-items: stretch;
   align-items: end;
+  object-fit: contain;
 }
 
 .hero-image .star {
@@ -290,6 +298,27 @@ img.fashion-logo-img {
   width: 95%;
 
 }
+
+
+/* -------------------------------
+--------Company Style----------
+------------------------------- */
+.companies {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  background-color: var(--clr-accent);
+  gap: max(5vw, 2vw);
+}
+
+.company {
+  height: 5rem;
+  mix-blend-mode: multiply;
+  width: clamp(5rem, 10vw, 25rem);
+}
+
 
 /* example 1:----- */
 /* .grid-container {
