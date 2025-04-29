@@ -215,9 +215,9 @@ img.fashion-logo-img {
 .call-to-action h1 {
   font-family: var(--ff-poppins-black);
   font-weight: var(--fw-style-black);
-  font-size: clamp(2.5rem, var(--fs-900), 5rem);
+  font-size: clamp(1rem, var(--fs-800), 5rem);
   color: var(--clr-dark);
-  line-height: 5rem;
+  line-height: clamp(4rem, 4rem, 6rem);
   width: clamp(20rem, 20vw, 50rem);
   margin-block: 1rem;
   padding-top: 1rem;
@@ -230,9 +230,8 @@ img.fashion-logo-img {
   font-weight: var(--fw-style-regular);
   font-size: var(--fs-100);
   color: var(--clr-dark);
-  line-height: 0;
+  line-height: 0.5rem;
   margin-top: 1rem;
-
   width: clamp(10rem, 40vw, 50rem);
 }
 
@@ -275,12 +274,12 @@ img.fashion-logo-img {
   border: none;
   color: var(--clr-light);
   background-color: var(--clr-dark);
-  font-size: var(--fs-200);
+  font-size: var(--fs-150);
   font-weight: var(--fw-style-medium);
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 1rem;
   align-self: flex-start;
   cursor: pointer;
-  margin-top: 1rem;
+  margin-top: 2rem;
 
 
 }
@@ -317,7 +316,6 @@ img.fashion-logo-img {
 }
 
 .hero-image .model {
-  transform: scale(105%);
   bottom: 0;
   right: 0;
   z-index: 2;
@@ -502,38 +500,80 @@ img.fashion-logo-img {
 }
 
 /* -------------------------------
---------Catefory Style----------
+--------Category Style----------
 ------------------------------- */
 
 .new-arrivals {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
     "title title title"
     "card card card";
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  gap: 2rem;
+  justify-self: center;
+  margin-bottom: 10vh;
+
 }
 
 .new-arrivals h1 {
   grid-area: title;
   font-family: var(--ff-poppins-black);
   font-weight: var(--fw-style-black);
-  font-size: var(--fs-600);
+  font-size: var(--fs-500);
   color: var(--clr-dark);
   line-height: 3.125rem;
   width: clamp(20rem, 40vw, 50rem);
   margin-block: 1rem;
   padding-top: 1rem;
   margin-bottom: var(--fs-800);
+  grid-column: 1/-1;
 }
 
-.new-arrivals .card {
-  grid-area: card;
+.new-arrivals .card .card-detail-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "card-title card-title"
+    "card-description card-link";
 }
 
-.card-img {}
+.new-arrivals .card .card-detail-container .card-title {
+  font-family: var(--ff-poppins-regular);
+  font-weight: var(--fw-style-medium);
+  font-size: var(--fs-200);
+  color: var(--clr-dark);
+  line-height: 1.5rem;
+  margin-block: 0.5rem;
+  margin-top: var(--fs-200);
+  grid-area: card-title;
+}
+
+.new-arrivals .card .card-detail-container .card-description {
+  font-family: var(--ff-poppins-regular);
+  font-weight: var(--fw-style-regular);
+  font-size: var(--fs-100);
+  color: var(--clr-accent-dark);
+  line-height: 1.5rem;
+  margin-block: 0.5rem;
+  display: inline-block;
+  grid-area: card-description;
+}
+
+.new-arrivals .card .card-detail-container .card-link {
+  font-family: var(--ff-poppins-regular);
+  font-weight: var(--fw-style-regular);
+  font-size: var(--fs-150);
+  color: #797979;
+  line-height: 1.5rem;
+  margin-block: 0.5rem;
+  display: inline-block;
+  grid-area: card-link;
+  justify-self: end;
+}
+
+
 
 /* example 1:----- */
 /* .grid-container {
