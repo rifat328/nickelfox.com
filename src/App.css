@@ -574,6 +574,59 @@ img.fashion-logo-img {
 }
 
 
+/* -------------------------------
+--------Promotion Section---------
+------------------------------- */
+
+.promotion {
+  width: 100%;
+  background-image:
+    linear-gradient(to top,
+      #E0C340 4%, #DFC23E 7%,
+      #E1C441 10%, #E3C743 13%,
+      #E4C542 16%, #E6C744 20%,
+      #E7C845 24%, #E5C643 31%, #E6C945 37%,
+      #E3C743 43%, #E9CA48 50%,
+      #EDCE49 57%, #F0D44C 63%,
+      #F4D84F 67%, #F6DA52 74%,
+      #F7DB53 79%, #F9DD55 86%,
+      #F9DF56 93%, #FAE157 100%, #F9DF56 100%);
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  grid-template-areas:
+    "image content"
+    "image content";
+  position: relative;
+}
+
+.promotion-image {
+  grid-area: image;
+}
+
+.promotion-image .model {
+  z-index: 2;
+
+}
+
+.promotion-image .star {
+  z-index: 1;
+  position: absolute;
+  top: 5rem;
+  left: 3rem;
+
+}
+
+.promotion-content {
+  grid-area: content;
+
+  .promotion-title {}
+
+  >span p {}
+
+  p>span.date {}
+}
 
 /* example 1:----- */
 /* .grid-container {

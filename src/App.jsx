@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import Hero from "./components//Hero";
 import Company from "./components/Company";
 import Category from "./components/Category";
+import Promotion from "./components/Promotion";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <Company />
       <Category />
+      <Promotion />
     </>
   );
 }
