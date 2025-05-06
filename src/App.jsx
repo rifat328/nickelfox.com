@@ -19,7 +19,7 @@ function App() {
       <Favourite />
       <MobileAppPromotion />
       <NewsLetter />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

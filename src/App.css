@@ -823,7 +823,7 @@ img.fashion-logo-img {
   font-weight: var(--fw-style-black);
   font-size: var(--fs-500);
   color: var(--clr-dark);
-  line-height: 4.125rem;
+  line-height: 3.85rem;
   width: clamp(20rem, 40vw, 50rem);
   margin-block: 1rem;
   padding-top: 1rem;
@@ -947,3 +947,80 @@ img.fashion-logo-img {
 /* ----------------------------------------
 --------NewsLetter Section-----------------
 ----------------------------------------- */
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  background-color: #E5C643;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.newsletter h1 {
+  font-family: var(--ff-poppins-black);
+  font-weight: var(--fw-style-black);
+  font-size: var(--fs-500);
+  color: var(--clr-light);
+  line-height: 3rem;
+  width: clamp(20rem, 60vw, 50rem);
+  margin-bottom: var(--fs-100);
+  text-align: center;
+}
+
+.newsletter p {
+  font-family: var(--ff-poppins-regular);
+  font-weight: var(--fw-style-regular);
+  font-size: var(--fs-150);
+  color: var(--clr-light);
+  line-height: 1.2rem;
+  width: clamp(20rem, 70vw, 50rem);
+  margin-bottom: var(--fs-100);
+  text-align: center;
+}
+
+.newsletter .form-section {
+  margin-top: 1rem;
+}
+
+.newsletter .form-section form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-light);
+  border-radius: 0.5rem;
+  padding-inline: 1.8rem;
+  padding-right: 0.5rem;
+  width: 100%;
+  height: 3.5rem;
+}
+
+.newsletter .form-section .email-input {
+  background-color: var(--clr-light);
+  font-size: var(--fs-100);
+  border: none;
+  flex: 1;
+}
+
+.newsletter .form-section .send-button {
+  padding-inline: 1.5rem;
+  padding-block: 0.3rem;
+  align-self: center;
+  cursor: pointer;
+}
+
+/* ----------------------------------------
+--------Footer Section-----------------
+----------------------------------------- */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  background-color: var(--clr-dark);
+}
