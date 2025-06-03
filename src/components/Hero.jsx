@@ -9,7 +9,7 @@ const Hero = () => {
           <span className="shape yellow">UNIQUE</span> CLOTHES.
         </h1>
         <p>Live for Influential and Innovative fashion!</p>
-        <button>Shop Now</button>
+        <button className="button">Shop Now</button>
       </div>
       <div className="hero-image">
         <img
